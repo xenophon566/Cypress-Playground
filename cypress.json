@@ -1,14 +1,4 @@
 {
-    "projectId": "w8rdav",
-    "reporter": "mochawesome",
-    "reporterOptions": {
-        "reportDir": "cypress/reports",
-        "overwrite": false,
-        "html": true,
-        "json": true
-    },
-    "retries": 1,
-    "baseUrl": "http://localhost:3000",
     "env": {
         "isMock": true,
         "host": "http://localhost:4200",
@@ -19,5 +9,6 @@
         "department": "JimmyCo",
         "identifyValueGuest": "U93cf5c0e1909f878b13f842d78f46805",
         "departmentGuest": "JimmyCo"
-    }
+    },
+    "chromeWebSecurity": false
 }
