@@ -2,10 +2,9 @@
     "name": "cypress-playground",
     "version": "0.0.0",
     "scripts": {
-        "start": "npm-run-all --parallel dev cypress-o",
-        "dev": "ng serve",
-        "cypress-r": "npx cypress run",
-        "cypress-o": "npx cypress open",
+        "start": "npm-run-all -p mock dev-mock",
+        "dev-mock": "ng serve",
+        "mock": "nodemon -w ./_mockserver --exec json-server ./_mockserver/_db.js -c _mockserver/config.json",
         "ng": "ng",
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
