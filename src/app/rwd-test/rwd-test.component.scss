@@ -1,0 +1,55 @@
+.container {
+    display: inline-block;
+}
+
+.title {
+    width: 100%;
+    padding: 4%;
+    margin: 4% 0;
+    border: 1px solid #000;
+
+    .short {
+        display: none;
+    }
+
+    .article {
+        min-width: 640px;
+    }
+}
+
+.img-container {
+    width: 100%;
+}
+
+/* 測試螢幕 macbook-15 */
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .img-container img {
+        width: 1400px;
+        height: 806px;
+    }
+}
+
+/* 測試螢幕 iphone-6 portrait */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .title {
+        .short {
+            display: block;
+        }
+
+        .article {
+            display: none;
+        }
+    }
+
+    .img-container img {
+        display: none;
+    }
+}
+
+/* 測試螢幕 iphone-6 landscape */
+@media screen and (min-width: 630px) and (max-width: 700px) {
+    .img-container img {
+        width: 640px;
+        height: 288px;
+    }
+}

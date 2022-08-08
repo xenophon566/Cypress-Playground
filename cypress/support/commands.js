@@ -35,3 +35,11 @@ Cypress.Commands.add("goVisit", (url, urlQueryParamStr = "") => {
 
     cy.visit(`${Cypress.env("host")}/${url}?${urlQueryParams}`);
 });
+
+Cypress.Commands.add("iframeCustom", { prevSubject: "element" }, ($iframe) => {
+    return new Cypress.Promise((resolve) => {
+        $iframe.ready(function () {
+            resolve($iframe.contents().find("body"));
+        });
+    });
+});

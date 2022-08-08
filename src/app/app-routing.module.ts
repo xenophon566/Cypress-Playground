@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { IframeNestedComponent } from './iframe-nested/iframe-nested.component';
 import { IframeOneComponent } from './iframe-nested/iframe-one/iframe-one.component';
 import { IframeTwoComponent } from './iframe-nested/iframe-two/iframe-two.component';
+import { RwdTestComponent } from './rwd-test/rwd-test.component';
 
 const routes: Routes = [
     {
@@ -21,6 +22,10 @@ const routes: Routes = [
     {
         path: 'iframe-two',
         component: IframeTwoComponent,
+    },
+    {
+        path: 'rwd-test',
+        component: RwdTestComponent,
     },
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: '**', redirectTo: 'home' },

@@ -7,9 +7,10 @@ import { IframeNestedComponent } from './iframe-nested/iframe-nested.component';
 import { HomeComponent } from './home/home.component';
 import { IframeOneComponent } from './iframe-nested/iframe-one/iframe-one.component';
 import { IframeTwoComponent } from './iframe-nested/iframe-two/iframe-two.component';
+import { RwdTestComponent } from './rwd-test/rwd-test.component';
 
 @NgModule({
-    declarations: [AppComponent, IframeNestedComponent, HomeComponent, IframeOneComponent, IframeTwoComponent],
+    declarations: [AppComponent, IframeNestedComponent, HomeComponent, IframeOneComponent, IframeTwoComponent, RwdTestComponent],
     imports: [BrowserModule, AppRoutingModule],
     providers: [],
     bootstrap: [AppComponent],

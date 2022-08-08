@@ -1,14 +1,7 @@
 {
-    "env": {
-        "isMock": true,
-        "host": "http://localhost:4200",
-        "hostECP": "https://qbi.chainsea.com.tw:39822/ecp/openapi",
-        "identifyBy": "FLineId",
-        "chatKeepId": "181d668e-e180-0d4d-4c14-00155dae811f",
-        "identifyValue": "U93cf5c0e1909f878b13f842d78f46805",
-        "department": "JimmyCo",
-        "identifyValueGuest": "U93cf5c0e1909f878b13f842d78f46805",
-        "departmentGuest": "JimmyCo"
-    },
+    "projectId": "cypress-playground",
+    "video": false,
+    "videosFolder": "cypress/videos",
+    "retries": 1,
     "chromeWebSecurity": false
 }
